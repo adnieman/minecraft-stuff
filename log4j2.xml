@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Place this file in the same directory as your Minecraft server jar. -->
 <Configuration>
 	<Appenders>
 		<File name="legacy_server_log" fileName="logs/latest.log">
