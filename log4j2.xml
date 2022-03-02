@@ -2,10 +2,6 @@
 <!-- Place this file in the same directory as your Minecraft server jar. -->
 <Configuration>
 	<Appenders>
-		<File name="legacy_server_log" fileName="logs/latest.log">
-			<PatternLayout pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS z} [%level] %msg%n" />
-		</File>
-
 		<Console name="console" target="SYSTEM_OUT">
 			<PatternLayout pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS z} [%level] %msg%n" />
 		</Console>
@@ -21,7 +17,6 @@
 	<Loggers>
 		<Root level="info">
 			<AppenderRef ref="rolling_server_log" />
-			<AppenderRef ref="legacy_server_log" />
 			<AppenderRef ref="console" />
 		</Root>
 	</Loggers>
