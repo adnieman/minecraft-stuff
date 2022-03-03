@@ -3,12 +3,12 @@
 <Configuration>
 	<Appenders>
 		<Console name="console" target="SYSTEM_OUT">
-			<PatternLayout pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS z} [%level] %msg%n" />
+			<PatternLayout pattern="%d{HH:mm:ss.SSS yyyy-MMM-dd} [%level] %msg%n" />
 		</Console>
 
 		<RollingFile name="rolling_server_log" fileName="logs/latest.log"
 				filePattern="logs/server_%d{yyyyMMdd}.log">
-			<PatternLayout pattern="%d{HH:mm:ss yyyy-MM-dd} [%level] %msg%n" />
+			<PatternLayout pattern="%d{HH:mm:ss.SSS yyyy-MMM-dd} [%level] %msg%n" />
 			<Policies>
 				<TimeBasedTriggeringPolicy interval="1" modulate="true" />
 			</Policies>
