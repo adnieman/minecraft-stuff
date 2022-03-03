@@ -8,7 +8,7 @@
 
 		<RollingFile name="rolling_server_log" fileName="logs/latest.log"
 				filePattern="logs/server_%d{yyyyMMdd}.log">
-			<PatternLayout pattern="%d{yyyy-MM-dd} [%level] %msg%n" />
+			<PatternLayout pattern="%d{HH:mm:ss yyyy-MM-dd} [%level] %msg%n" />
 			<Policies>
 				<TimeBasedTriggeringPolicy interval="1" modulate="true" />
 			</Policies>
